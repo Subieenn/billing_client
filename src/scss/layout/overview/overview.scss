@@ -1,0 +1,164 @@
+.pos-grid {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      padding-bottom: 10vh;
+    }
+
+    .tab-side {
+        width: 15.2%;
+        @media (max-width: 1230px) {
+            width: 18.2%;
+        }
+        @media (max-width: 1048px) {
+            width: 7.2%;
+        }
+        @media (max-width: 768px) {
+            width: 0%;
+        }
+    }
+
+    .pos-products {
+        width: 50%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 1rem 1.5rem;
+        @media (max-width: 1048px) {
+            width: 60%;
+        }
+
+        .products-list-pos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            @media (max-width: 1230px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .single-product {
+                border: 1px solid #e9e9e9;
+                border-radius: 7px;
+                overflow: hidden;
+                text-align: center;
+
+                .info {
+                    padding: 0.5rem;
+
+                    .name {
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                        min-height: 2.4rem;
+                        max-height: 4.8rem !important;
+                    }
+
+                    .price {
+                        font-size: 1rem;
+                        color: $secondary;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    border-radius: 0;
+                    padding: 7px 0;
+                }
+
+            }
+        }
+    }
+
+    .tab-content{
+        height: 73.5vh;
+        overflow-y: scroll;
+    }
+
+    .billing {
+        width: 28%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 1rem 1.5rem;
+        overflow-y: scroll;
+        @media (max-width: 1048px) {
+            width: 33%;
+        }
+        @media (max-width: 768px) {
+            width: 40%;
+        }
+        .table-div {
+            height: 45%;
+            max-height: 45% !important;
+            overflow-y: scroll;
+
+            th {
+                font-size: 16px;
+                font-weight: 500;
+
+            :nth-of-type(4){
+                width: 1rem;
+            }
+            }
+
+            td {
+                font-size: 14px;
+                svg{
+                    font-size: 19px;
+                }
+                :nth-of-type(4){
+                    width: 1rem;
+                }
+            }
+        }
+
+
+        .billing-conclusion{
+            padding-top: 1rem;
+            height: 45%;
+            .form-floating{
+                textarea{
+                    height: 3.2rem;
+                    margin-bottom: 0.3rem;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
+
+.page-container {
+
+    .table-side {
+        padding: 1.5rem 2rem;
+
+        .tables-list {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}
+
+
+
+.invoice{
+    border: 1px;
+    padding: 0 1.3rem;
+    // position: absolute;
+    // background-color: aqua;
+    // left: 50%;
+    // top: 0%;
+    .qr{
+        height: 10rem;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+
+    td{
+        margin: 3px auto;
+    }
+    hr{
+        margin: 3px auto;
+    }
+}

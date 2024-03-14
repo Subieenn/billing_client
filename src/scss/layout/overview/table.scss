@@ -1,0 +1,11 @@
+.page-container{
+    .table-side{
+        padding: 1.5rem 2rem;
+
+        .tables-list{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(6, 1fr) !important; 
+        }
+    }
+}

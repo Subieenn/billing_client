@@ -1,0 +1,11 @@
+.product-sales-table{
+    height: fit-content !important;
+    thead tr {
+        background-color: $success;
+        color: #ffffff;
+        text-align: left;
+    }
+    tbody tr:nth-of-type(even) {
+        background-color: #ffffff;
+    }
+}
